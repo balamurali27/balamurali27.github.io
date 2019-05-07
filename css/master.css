@@ -1,0 +1,75 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+}
+nav ul {
+	background-color: #333;
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+}
+nav li {
+	float: left;
+}
+/* TODO: different fonts for paragraphs, headings, navbar <08-05-19, Balamurali M> */
+nav a {
+	display: block;
+	padding: 20px 32px;
+	color: white;
+	text-decoration: none;
+}
+nav a:hover {
+	background-color: white;
+	color: #333;
+}
+article {
+	background-color: white;
+	padding: 2px 5px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,5.2);
+	border-radius: 1px;
+}
+@media only screen and (min-width: 760px) {
+	/* for desktop */
+	article {
+		margin: 0px 20%;
+		padding: 5px 5%;
+	}
+}
+article a {
+	text-decoration: none;
+	border-bottom: solid 1px;
+}
+article a:hover {
+	background-color: #99999999;
+	border-bottom: solid 3px;
+}
+article p {
+	text-indent: 2em;
+}
+section, p, form {
+	margin: 5px;
+}
+h1, h2 {
+	border-bottom: solid 5px;
+	/* TODO: change font to dosis <04-05-19, Balamurali M> */
+}
+/* tabular layout for form */
+form, section#skills {
+	display: table;
+}
+span.tr {
+	display: table-row;
+}
+label {
+	width: 175px;
+	display: table-cell;
+}
+input {
+	display: table-cell;
+}
+textarea {
+	resize: none;
+}
