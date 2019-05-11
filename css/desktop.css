@@ -1,0 +1,9 @@
+@media only screen and (min-width: 760px) {
+	/* for desktop */
+	article {
+		margin: 0px 20%;
+		padding: 5px 5%;
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,5.2);
+	}
+	/* TODO: desktop navbar here <09-05-19, Balamurali M> */
+}

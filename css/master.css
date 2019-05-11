@@ -1,75 +1,108 @@
+/************
+ *  general  *
+ ************/
+
 * {
-	box-sizing: border-box;
+		box-sizing: border-box;
 }
 body {
-	margin: 0;
-	font-family: Arial, "MS Trebuchet", sans-serif;
+		margin: 0;
+		font-family: Arial, "MS Trebuchet", sans-serif;
 }
+a {
+		text-decoration: none;
+}
+/****************
+ *  navigation  *
+ ****************/
+
 nav ul {
-	background-color: #333;
-	list-style-type: none;
-	overflow: hidden;
-	margin: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background-color: #333;
+		list-style-type: none;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
 }
 nav li {
-	float: left;
+		float: left;
 }
-/* TODO: different fonts for paragraphs, headings, navbar <08-05-19, Balamurali M> */
 nav a {
-	display: block;
-	padding: 20px 32px;
-	color: white;
-	text-decoration: none;
+		display: block;
+		padding: 20px 32px;
+		color: white;
 }
 nav a:hover {
-	background-color: white;
-	color: #333;
+		background-color: white;
+		color: #333;
+}
+/**********
+ *  main  *
+ **********/
+
+/* TODO: different fonts for paragraphs, headings, navbar <08-05-19, Balamurali M> */
+main {
+		/* cuz of fixed navbar */
+		padding-top: 50px;
 }
 article {
-	background-color: white;
-	padding: 2px 5px;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,5.2);
-	border-radius: 1px;
+		background-color: white;
+		padding: 2px 10px;
+		border-radius: 1px;
 }
-@media only screen and (min-width: 760px) {
-	/* for desktop */
-	article {
-		margin: 0px 20%;
-		padding: 5px 5%;
-	}
+.organic-blob {
+		/* TODO: image strech fix <11-05-19, Balamurali M> */
+		height: 200px;
+		width: 200px;
+		float: right;
+		border-radius: 50% 50% 32% 68% / 42% 66% 34% 58% ;
 }
 article a {
-	text-decoration: none;
-	border-bottom: solid 1px;
+		border-bottom: solid 1px;
 }
 article a:hover {
-	background-color: #99999999;
-	border-bottom: solid 3px;
+		background-color: #99999999;
+		border-bottom: solid 3px;
 }
 article p {
-	text-indent: 2em;
+		text-indent: 2em;
 }
-section, p, form {
-	margin: 5px;
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  
+  /* Get rid of default border in Firefox. */
+  border: none;
+  
+  /* Dimensions */
+  width: 250px;
+  height: 20px;
 }
-h1, h2 {
-	border-bottom: solid 5px;
-	/* TODO: change font to dosis <04-05-19, Balamurali M> */
+/* TODO: heading linespacing reduce <11-05-19, Balamurali M> */
+/* TODO: set font size, font color and line width accordingly <11-05-19, Balamurali M> */
+label, input, textarea {
+		display: block;
 }
-/* tabular layout for form */
-form, section#skills {
-	display: table;
+input, textarea {
+		margin: 5px;
 }
-span.tr {
-	display: table-row;
-}
-label {
-	width: 175px;
-	display: table-cell;
-}
-input {
-	display: table-cell;
-}
+/* TODO: send button css <09-05-19, Balamurali M> */
 textarea {
-	resize: none;
+		resize: none;
+}
+/************
+ *  footer  *
+ ************/
+
+main + footer {
+		padding: 20px 32px;
+		color: white;
+		background-color: #333;
+}
+main + footer p {
+		text-align: center;
 }
