@@ -2,107 +2,121 @@
  *  general  *
  ************/
 
+/* TODO: different fonts for paragraphs, headings, navbar <08-05-19, Balamurali M> */
+/* TODO: heading linespacing reduce <11-05-19, Balamurali M> */
+/* TODO: set font size, font color and line width accordingly <11-05-19, Balamurali M> */
 * {
-		box-sizing: border-box;
+	box-sizing: border-box;
 }
 body {
-		margin: 0;
-		font-family: Arial, "MS Trebuchet", sans-serif;
+	margin: 0;
+	font-family: Helvetica, Arial, "MS Trebuchet", sans-serif;
+	background-image: repeating-linear-gradient(to bottom right, #314c6a, #945f79);
 }
 a {
-		text-decoration: none;
+	text-decoration: none;
 }
 /****************
  *  navigation  *
  ****************/
 
 nav ul {
-		position: fixed;
-		top: 0;
-		width: 100%;
-		background-color: #333;
-		list-style-type: none;
-		overflow: hidden;
-		margin: 0;
-		padding: 0;
+	width: 100%;
+	background-color: #333;
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
 }
 nav li {
-		float: left;
+	float: left;
 }
 nav a {
-		display: block;
-		padding: 20px 32px;
-		color: white;
+	display: block;
+	padding: 20px 32px;
+	color: white;
 }
 nav a:hover {
-		background-color: white;
-		color: #333;
+	background-color: white;
+	color: #333;
 }
 /**********
  *  main  *
  **********/
 
-/* TODO: different fonts for paragraphs, headings, navbar <08-05-19, Balamurali M> */
 main {
-		/* cuz of fixed navbar */
-		padding-top: 50px;
+	/* cuz of fixed navbar */
+	padding: 0;
+	background-color: white;
+}
+.banner {
+	background-image: url(../assets/balu-landscape.jpg);
+	background-size: cover;
+	background-position: bottom;
+	height: 400px;
+	color: white;
+	position: relative;
+}
+.banner .onimage {
+	margin: 0px 10px;
+	bottom: 0;
+	position: absolute;
+	text-shadow: 2px 2px 2px black;
+}
+.banner h1{
+	width: 65%;
+}
+.banner p {
+	font-weight: bolder;
+	width: 45%;
+	font-family: monospace;
+	font-size: 1.25em;
 }
 article {
-		background-color: white;
-		padding: 2px 10px;
-		border-radius: 1px;
-}
-.organic-blob {
-		/* TODO: image strech fix <11-05-19, Balamurali M> */
-		height: 200px;
-		width: 200px;
-		float: right;
-		border-radius: 50% 50% 32% 68% / 42% 66% 34% 58% ;
+	padding: 2px 10px;
+	line-height: 1.4em;
 }
 article a {
-		border-bottom: solid 1px;
+	border-bottom: solid 1px;
 }
 article a:hover {
-		background-color: #99999999;
-		border-bottom: solid 3px;
-}
-article p {
-		text-indent: 2em;
+	background-color: #99999999;
+	border-bottom: solid 3px;
 }
 progress[value] {
-  /* Reset the default appearance */
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  
-  /* Get rid of default border in Firefox. */
-  border: none;
-  
-  /* Dimensions */
-  width: 250px;
-  height: 20px;
+	/* Reset the default appearance */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	/* Get rid of default border in Firefox. */
+	border: none;
+
+	/* Dimensions */
+	width: 250px;
+	height: 20px;
 }
-/* TODO: heading linespacing reduce <11-05-19, Balamurali M> */
-/* TODO: set font size, font color and line width accordingly <11-05-19, Balamurali M> */
 label, input, textarea {
-		display: block;
+	display: block;
 }
 input, textarea {
-		margin: 5px;
+	margin: 5px;
 }
 /* TODO: send button css <09-05-19, Balamurali M> */
 textarea {
-		resize: none;
+	resize: none;
 }
 /************
  *  footer  *
  ************/
 
 main + footer {
-		padding: 20px 32px;
-		color: white;
-		background-color: #333;
+	padding: 20px 32px;
+	color: white;
+	background-color: #333;
 }
 main + footer p {
-		text-align: center;
+	font-family: monospace;
+	font-size: 1.4em;
+	text-align: center;
 }
