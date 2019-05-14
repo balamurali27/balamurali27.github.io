@@ -3,15 +3,12 @@
  ************/
 
 /* TODO: different fonts for paragraphs, headings, navbar <08-05-19, Balamurali M> */
-/* TODO: heading linespacing reduce <11-05-19, Balamurali M> */
-/* TODO: set font size, font color and line width accordingly <11-05-19, Balamurali M> */
 * {
 	box-sizing: border-box;
 }
 body {
 	margin: 0;
 	font-family: Helvetica, Arial, "MS Trebuchet", sans-serif;
-	background-image: repeating-linear-gradient(to bottom right, #314c6a, #945f79);
 }
 a {
 	text-decoration: none;
@@ -45,7 +42,6 @@ nav a:hover {
  **********/
 
 main {
-	/* cuz of fixed navbar */
 	padding: 0;
 	background-color: white;
 }
@@ -84,11 +80,6 @@ article a:hover {
 	border-bottom: solid 3px;
 }
 progress[value] {
-	/* Reset the default appearance */
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-
 	/* Get rid of default border in Firefox. */
 	border: none;
 

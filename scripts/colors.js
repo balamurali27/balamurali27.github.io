@@ -5,13 +5,15 @@ function getRandomIntInclusive(min, max) {
 		return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 //to give random color gradient background
-let color1 = '#'+(0x1000000 + (Math.random()) * 0xffffff).toString(16).substr(1,6);
-let color2 = '#'+(0x1000000 + (Math.random()) * 0xffffff).toString(16).substr(1,6);
-let color3 = '#'+(0x1000000 + (Math.random()) * 0xffffff).toString(16).substr(1,6);
+let colors = [];
+for (var i = 0, len = 2; i < len; i++) {
+	colors[i] = '#'+(0x1000000 + (Math.random()) * 0xffffff).toString(16).substr(1,6);
+}
 direction = getRandomIntInclusive(0, 360);
 document.querySelector('body').style.backgroundImage =
-		"repeating-linear-gradient(" + direction + "deg , " + color1 + ", " + color2 + ", " + color3 + ")";
+		"repeating-linear-gradient(" + direction + "deg, "
+		+ colors[0] + ", " + colors[1] + ")";
 //color to links
 document.querySelectorAll('article a').forEach(function(a) {
-		a.style.color = color1;
+		a.style.color = colors[1];
 });
