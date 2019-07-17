@@ -13,7 +13,3 @@ direction = getRandomIntInclusive(0, 360);
 document.querySelector('body').style.backgroundImage =
 		"repeating-linear-gradient(" + direction + "deg, "
 		+ colors[0] + ", " + colors[1] + ")";
-//color to links
-document.querySelectorAll('article a').forEach(function(a) {
-		a.style.color = colors[1];
-});
