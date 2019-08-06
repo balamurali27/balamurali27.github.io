@@ -13,29 +13,8 @@ body {
 a {
 	text-decoration: none;
 }
-/****************
- *  navigation  *
- ****************/
-
-nav ul {
-	width: 100%;
-	background-color: #333;
-	list-style-type: none;
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
-}
-nav li {
-	float: left;
-}
-nav a {
-	display: block;
-	padding: 20px 32px;
-	color: white;
-}
-nav a:hover {
-	background-color: white;
-	color: #333;
+code, pre {
+	display: inline;
 }
 /**********
  *  main  *
@@ -49,7 +28,7 @@ main {
 	background-image: url(../assets/balu-landscape.jpg);
 	background-size: cover;
 	background-position: bottom;
-	height: 400px;
+	height: 350px;
 	color: white;
 	position: relative;
 }
@@ -100,8 +79,18 @@ textarea {
 /************
  *  footer  *
  ************/
-
+.social {
+	color: white;
+	font-size: 2em;
+	margin: 20px 32px;
+}
+.blob {
+	background: linear-gradient(to bottom right, red, purple);
+	padding: 10px 10px 0px 10px;
+	border-radius: 50% 50% 69% 31% / 41% 59% 41% 59%;
+}
 main + footer {
+	text-align: center;
 	padding: 20px 32px;
 	color: white;
 	background-color: #333;
@@ -109,5 +98,4 @@ main + footer {
 main + footer p {
 	font-family: monospace;
 	font-size: 1.4em;
-	text-align: center;
 }
