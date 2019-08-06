@@ -1,0 +1,26 @@
+/****************
+ *  navigation  *
+ ****************/
+nav ul {
+	position: fixed;
+	/* height: 52px; */
+	z-index: 1;
+	width: 100%;
+	background-color: #333;
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+nav li {
+	float: left;
+}
+nav a {
+	display: block;
+	padding: 20px 32px;
+	color: white;
+}
+nav a:hover {
+	background-color: white;
+	color: #333;
+}
