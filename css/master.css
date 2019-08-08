@@ -84,10 +84,13 @@ textarea {
 	font-size: 2em;
 	margin: 20px 32px;
 }
-.blob {
-	background: linear-gradient(to bottom right, red, purple);
-	padding: 10px 10px 0px 10px;
-	border-radius: 50% 50% 69% 31% / 41% 59% 41% 59%;
+.red_button {
+	color: white;
+	font-family: Verdana, Arial, "MS Trebuchet", sans-serif;
+	text-decoration: none;
+	background: red;
+	padding: 10px;
+	border-radius: 5%;
 }
 main + footer {
 	text-align: center;
