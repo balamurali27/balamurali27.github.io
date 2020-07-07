@@ -35,9 +35,12 @@ main {
   position: absolute;
   text-shadow: 2px 2px 2px black;
 }
+
 .banner a {
-  text-shadow: 0 0 0 #ffffff, 0 0 5px #ffffff;
+  text-shadow: #ffffff 0 0 1px;
+  -webkit-font-smoothing: antialiased;
 }
+
 .banner h1 {
   width: 65%;
 }
