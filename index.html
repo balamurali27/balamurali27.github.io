@@ -1,117 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Balamurali M</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balamurali M</title>
+    <link
+      rel="stylesheet"
+      href="css/master.css"
+      type="text/css"
+      media="screen"
+      charset="utf-8"
+    />
+    <link
+      rel="stylesheet"
+      href="css/desktop.css"
+      type="text/css"
+      media="screen"
+      charset="utf-8"
+    />
+    <link
+      rel="stylesheet"
+      href="icomoon/style.css"
+      type="text/css"
+      media="screen"
+      charset="utf-8"
+    />
+    <link
+      rel="stylesheet"
+      href="css/icomoon-font.css"
+      type="text/css"
+      media="screen"
+      charset="utf-8"
+    />
+  </head>
+  <body>
+    <main>
+      <header class="banner">
+        <div class="onimage">
+          <h1>Balamurali M</h1>
+          <p>
+            Open source developer, CTO of
+            <a href="https://www.oreon.xyz" target="_blank">Oreon</a> and
+            Sysadmin of his own laptop &#128521;
+          </p>
+        </div>
+      </header>
+      <article>
+        <h2>About me</h2>
+        <p>
+          I am a Computer Science Graduate and developer. Been coding for
+          approximately 6 years. Over the past few months, I've developed
+          expertise on Embedded systems and Backend development.
+        </p>
 
-	<link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
-	<link rel="stylesheet" href="css/desktop.css" type="text/css" media="screen" title="no title" charset="utf-8">
-	<link rel="stylesheet" href="icomoon/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
-	<link rel="stylesheet" href="css/icomoon-font.css" type="text/css" media="screen" title="no title" charset="utf-8">
-</head>
-<body>
-	<header>
-		<!-- <nav> -->
-			<!-- <ul> -->
-				<!-- <li><a href="#">Home</a></li> -->
-				<!-- <li><a href="#about">About</a></li> -->
-				<!-- <li><a href="#skills">Skills</a></li> -->
-				<!-- <li><a href="#contact">Contact</a></li> -->
-			<!-- </ul> -->
-		<!-- </nav> -->
-	</header>
-	<main>
-		<header class="banner">
-			<div class="onimage">
-				<h1>Balamurali M</h1>
-				<p>Open source developer, Linux user and Sysadmin of
-				his own laptop &#128521;</p>
-			</div>
-		</header>
-		<article>
-			<header id="about">
-				<h2>About me</h2>
-			</header>
-			<p>I am a student at <a href="http://rit.ac.in" target="_blank">
-				Rajiv Gandhi institute of technology</a>,
-			currently pursuing his B.tech in Computer Science Engineering.
-			</p>
-			<p>Programming was the reason I got into CSE. I've always found
-			programming very satisfying ever since we were taught Java back
-			in 8th grade. Since then, I've learned more languages
-			to code in, more platforms to code in and
-			even more text editors to code in!
-			</p>
-			<!-- <section id="blogs"> -->
-			<!-- <h2>Some of the blogs I've made</h2> -->
-			<!-- [> TODO: add boxes for links to blogs <04-05-19, Balamurali M> <] -->
-			<!-- </section> -->
-			<section id="Setup">
-				<h2>Setup</h2>
-				<p>I use Arch Linux as my daily driver. I have set up my laptop with <a href="https://wiki.archlinux.org/index.php/Dm-crypt/Encrypting_an_entire_system#LVM_on_LUKS">full disk encryption</a> with a <code>btrfs</code> root so that i can take snapshots and roll back to them when updates break my system.</p>
-					<p>I also use <a href="https://awesomewm.org/">awesome window manager</a> which is super customisable and lightweight. This allows me to bring my ram usage to around 400MB even with all the applets that I use!</p>
-				
-			</section>
-			<section id="skills">
-				<h2>Skills</h2>
-				<span class="tr">
-					<label>JavaScript : </label>
-					<progress id="JavaScript" max="100" value="80"></progress>
-				</span>
-				<span class="tr">
-					<label>Python : </label>
-					<progress max="100" value="90"></progress>
-				</span>
-				<span class="tr">
-					<label>C : </label>
-					<progress max="100" value="90"></progress>
-				</span>
-				<span class="tr">
-					<label>Html/CSS : </label>
-					<progress max="100" value="80"></progress>
-				</span>
-				<span class="tr">
-					<label>Java : </label>
-					<progress max="100" value="70"></progress>
-				</span>
-			</section>
-			<footer id="contact">
-				<h2>Contact me</h2>
-				<form action="https://formspree.io/balamurali05@outlook.com" method="POST">
-						<label>Name
-								<input id="name" type="text" name="name">
-						</label>
-						<label>Email
-								<input id="email" type="email" name="_replyto">
-						</label>
-						<label>Comment
-								<textarea name="comment" rows="5" cols="28"></textarea>
-						</label>
-						<input type="submit" value="Send">
-				</form> 
-			</footer>
-		</article>
-	</main>
-	<footer>
-		<!-- social media links  -->
-			<a class="social" href="https://gitlab.com/kawaiideku" title="gitlab where i keep my LAB code lol">
-				<span class="icon-gitlab"></span>
-			</a>
-			<a class="social" href="https://github.com/balamurali27">
-				<span class="icon-github"></span>
-			</a>
-			<a class="social" href="http://linkedin.com/in/balamurali-murali">
-				<span class="icon-linkedin"></span>
-			</a>
-			<br>
-			<br>
-			<a title="Download my resume" class="red_button" href="assets/resume.pdf">
-				Resume <span class="icon-download"></span>
-			</a>
-			<p>Made with ❤️ using semantic html, vanilla css &amp; js.</p>
-			<p><small>psst..try reloading the page</small></p>
-	</footer>
-	<script src="scripts/colors.js" charset="utf-8"></script>
-</body>
+        <section>
+          <h2>Languages</h2>
+          <dl>
+            <dt><h4>Python</h4></dt>
+            <dd>
+              Currently my most preferred language. Used in projects on video
+              processing, neural nets, web scraping, Backend APIs etc.
+            </dd>
+            <dt><h4>C</h4></dt>
+            <dd>
+              Very familiar. I've done a lot of firmware development on esp32
+              with the esp-IDF framework
+            </dd>
+            <dt><h4>HTML/CSS</h4></dt>
+            <dd>
+              Know enough to make a
+              <a href="index.html">decent responsive website</a> without
+              bootstrap with help from Google.
+            </dd>
+            <dt><h4>JavaScript</h4></dt>
+            <dd>
+              Unfamiliar with ES2015 features. I know basic things in client
+              side &amp; node.js.
+            </dd>
+            <dt><h4>Java</h4></dt>
+            <dd>
+              Done a lot of it during college lab hours. Learned OOP principles
+              here. No major projects.
+            </dd>
+          </dl>
+        </section>
+
+        <section>
+          <h2>Contact me</h2>
+          <p>
+            Wanna send me an email? Put your name &amp; email here and I'll get
+            back to you.
+          </p>
+          <form
+            action="https://formspree.io/balamurali05@outlook.com"
+            method="POST"
+          >
+            <label
+              >Name
+              <input id="name" type="text" name="name" />
+            </label>
+            <label
+              >Email
+              <input id="email" type="email" name="_replyto" />
+            </label>
+            <label
+              >Comment
+              <textarea name="comment" rows="5" cols="28"></textarea>
+            </label>
+            <input type="submit" value="Send" />
+          </form>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <!-- social media links  -->
+      <a
+        class="social"
+        href="https://gitlab.com/kawaiideku"
+        title="gitlab where i keep my LAB code lol"
+      >
+        <span class="icon-gitlab"></span>
+      </a>
+      <a class="social" href="https://github.com/balamurali27">
+        <span class="icon-github"></span>
+      </a>
+      <a class="social" href="http://linkedin.com/in/balamurali-murali">
+        <span class="icon-linkedin"></span>
+      </a>
+      <br />
+      <br />
+      <a title="Download my resume" class="red_button" href="assets/resume.pdf">
+        Resume <span class="icon-download"></span>
+      </a>
+      <p>Made with ❤️ using semantic html, vanilla css &amp; js.</p>
+      <p><small>psst..try reloading the page</small></p>
+    </footer>
+    <script src="scripts/colors.js" charset="utf-8"></script>
+  </body>
 </html>
