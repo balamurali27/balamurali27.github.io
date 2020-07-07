@@ -1,0 +1,22 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "A simple website built in vanilla html, css & js",
+  "main": "index.html",
+  "scripts": {
+    "test": "firefox index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balamurali27/website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/balamurali27/website/issues"
+  },
+  "homepage": "https://github.com/balamurali27/website#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
